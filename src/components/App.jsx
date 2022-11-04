@@ -4,14 +4,12 @@ import Filter from './Filter/Filter';
 import { nanoid } from 'nanoid'
 import { useDispatch,useSelector } from 'react-redux';
 import {getContacts} from '../redux/contacts/contactSelector';
-import {getFilter} from '../redux/filter/filterSelector';
 import {addContactAction} from '../redux/contacts/contactsSlice';
 import {removeContactAction} from '../redux/contacts/contactsSlice';
 import {setFilterAction} from '../redux/filter/filterSlice';
 
 const App = () => {
   const dispatch = useDispatch();
-  const filter = useSelector(getFilter);
   const contacts = useSelector(getContacts)
 
   const handleOnSubmit = ({ name,number }) => {
