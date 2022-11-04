@@ -2,7 +2,7 @@ import React from 'react';
 import css from './Filter.module.css'
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
-import {getFilter} from '../redux/filter/filterSelector'
+import {getFilter} from '../../redux/filter/filterSelector'
 
 
 const Filter = ({onFilterChange}) =>{
